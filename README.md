@@ -6,7 +6,7 @@
 
 ### Features
 
-- Real time chate engine for comments
+- Real time chat engine for comments
 - Blog
 - Portfolio
 - Drag and Drop interface
@@ -16,5 +16,5 @@
 ```ruby 
 def name
 puts "Mckaid C Gustafson"
-end 
+end
 ```
