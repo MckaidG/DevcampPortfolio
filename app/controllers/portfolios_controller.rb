@@ -20,11 +20,13 @@ class PortfoliosController < ApplicationController
        end
      end
    end
-# GET /portfolio
    
+# GET /portfolio
+
    def edit
     	@portfolio_item = Portfolio.find(params[:id])
    end
+   
 
 def update
 	@portfolio_item = Portfolio.find(params[:id])
@@ -37,9 +39,14 @@ def update
     end
   end
 
-  
+  def show 
+    @portfolio_item = Portfolio.find(params[:id])
+  end
 
-	
+	end
 
 
-end
+
+
+
+
