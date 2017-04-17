@@ -44,11 +44,11 @@ def update
   end
 
 def destroy
-  # Performe the look up
+    # Performe the look up
   @portfolio_item = Portfolio.find(params[:id])
 
-# Destroys/delete the record
-    @portfolio_item.destroy
+    # Destroys/delete the record
+  @portfolio_item.destroy
 
     #Redirect 
     respond_to do |format|
