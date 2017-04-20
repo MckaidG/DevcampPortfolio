@@ -10,6 +10,6 @@ module CurrentUserConcern
   								 first_name: "Guest", 
   								 last_name: "User", 
   								 email: "guest@aexample.com"
-  								 )
+                   )
   end
 end
