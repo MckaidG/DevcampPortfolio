@@ -29,7 +29,8 @@ class PortfoliosController < ApplicationController
 # GET /portfolio
 
    def edit
-    	@portfolio_item = Portfolio.find(params[:id])
+      @portfolio_item = Portfolio.find(params[:id])
+      
    end
    
 
@@ -71,9 +72,7 @@ def destroy
                                       technologies_attributes: [:name]
                                       )
   end
-
-
-	end
+end
 
 
 
