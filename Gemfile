@@ -61,3 +61,5 @@ gem 'devise', '~> 4.2', '>= 4.2.1'
 gem 'bootstrap', '~> 4.0.0.alpha6'
 
 gem 'gustafson_view_tool', git: 'https://github.com/MckaidG/gustafson_view_tool'
+
+gem 'petergate', '~> 1.7', '>= 1.7.3'
