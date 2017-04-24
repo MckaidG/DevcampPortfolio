@@ -11,10 +11,4 @@
 - Portfolio
 - Drag and Drop interface
 
-### Code Example
 
-```ruby 
-def name
-puts "Mckaid C Gustafson"
-end
-```
