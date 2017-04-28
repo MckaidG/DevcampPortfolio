@@ -43,7 +43,7 @@ title: "Portfolio title: #{portfolio_item}",
 subtitle: "Angular",
 body: 'Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Etiam porta sem malesuada magna mollis euismod. Maecenas sed diam eget risus varius blandit sit amet non magna. Donec ullamcorper nulla non metus auctor fringilla.' ,
 main_image: "http://placehold.it/600x400",
-thumb_image: "http://placehold.it/350x150"
+thumb_image: "http://placehold.it/350x200"
 		)
 end
 

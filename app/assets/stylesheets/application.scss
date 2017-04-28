@@ -15,9 +15,9 @@ a:hover {
 .btn-secondary,
 .btn-secondary:hover,
 .btn-secondary:focus {
-  color: white;
+  color: #5F9EA0;
   text-shadow: none; /* Prevent inheritance from `body` */
-  background-color: #333; /* #fff */
+  background-color: #fff; /* #fff */
   border: .05rem solid #fff;
 }
 
@@ -58,9 +58,12 @@ body {
 
 /* Padding for spacing */
 .inner {
-  padding: 2rem;
+  padding-top: 2rem;
 }
 
+.inner-1 {
+  padding-top: 2rem;
+}
 
 /*
  * Header
@@ -72,6 +75,7 @@ body {
 
 .masthead-brand {
   margin-bottom: 0;
+
 }
 
 .nav-masthead .nav-link {
@@ -99,6 +103,7 @@ body {
 @media (min-width: 48em) {
   .masthead-brand {
     float: left;
+
   }
   .nav-masthead {
     float: right;
@@ -182,7 +187,6 @@ body {
   width: 22rem;
   margin: 0 auto;
   float: none;
-  margin-bottom: 10px;
 }
 
 .app-nav span {
