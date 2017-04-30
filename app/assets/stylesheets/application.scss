@@ -199,10 +199,14 @@ body {
   z-index: -100;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  background: image-url('home.png') no-repeat;
+  background: image-url('Love_Coding.png') no-repeat;
   background-size: cover;
 }
 
 .app-footer {
   color: white;
+}
+
+.entrance {
+  font-size: 2rem;
 }
