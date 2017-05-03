@@ -17,7 +17,7 @@ module ApplicationHelper
   end
 
   def copyright_generator
-   GustafsonViewTool::Renderer.copyright 'Mckaid C. Gustafson', 'All rights reserved'
+   GustafsonViewTool::Renderer.copyright 'Mckaid Gustafson', 'All rights reserved'
   end
 
   def nav_items
@@ -42,7 +42,10 @@ module ApplicationHelper
         url: portfolios_path,
         title: 'Portfolio'
       },
-      
+      {
+        url: tech_news_path,
+        title: 'Tech News'
+      },
     ]
   end
 
@@ -63,15 +66,13 @@ module ApplicationHelper
   def alerts
     alert = (flash[:alert] || flash[:error] || flash[:notice])
 
-    if alert 
+    if alert
       alert_generator alert
+    end
   end
-end
 
-def alert_generator msg 
-   js add_gritter(msg, title: "McKaid Gustafson Portfolio", sticky: false, time: 2000)
-end
-
-
+  def alert_generator msg
+    js add_gritter(msg, title: "Jordan Hudgens Portfolio", sticky: false)
+  end
 
 end
