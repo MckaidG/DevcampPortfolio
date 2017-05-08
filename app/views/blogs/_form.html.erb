@@ -1,7 +1,7 @@
 <%= form_for(blog) do |f| %>
   <% if blog.errors.any? %>
     <% blog.errors.full_messages.each do |error| %>
-      <%=   alert_generator error %>
+      <%= alert_generator error %>
     <% end %>
   <% end %>
 
@@ -24,7 +24,7 @@
   <div class="form-group">
     <%= f.radio_button :status, 'Draft' %>
     <%= f.label :status, 'Draft' %>
-    
+
     <%= f.radio_button :status, 'Published' %>
     <%= f.label :status, 'Published' %>
   </div>
@@ -37,4 +37,3 @@
     <%= f.submit "Save", class: 'btn btn-info btn-block' %>
   </div>
 <% end %>
-
