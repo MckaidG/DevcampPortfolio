@@ -32,9 +32,11 @@ body {
   height: 100%;
 }
 body {
+  font-family: "tahoma";
   color: #fff;
   text-align: center;
   text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
+
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -188,9 +190,10 @@ body {
 }
 
 .app-nav span {
-
+  color: white;
   margin-left: 11px;
   margin-right: 11px;
+
 }
 
 #background {
@@ -204,13 +207,13 @@ body {
   z-index: -100;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  background: image-url('home.png') no-repeat;
+  background: image-url('background.jpg') no-repeat;
   background-size: cover;
-   
+
 }
 .app-footer {
   color: white;
-  
+
 }
 
 .entrance {
@@ -223,9 +226,12 @@ padding-left: 5px;
 }
 
 .tech-news {
+  font-family: "tahoma";
+  font-size: 1.2em;
   color: white;
-  margin: 20px;
-  text-shadow: 
+  margin-top: 20px;
+
+  text-shadow:
         /* first layer at 1px */
         -1px -1px 0px #000,
          0px -1px 0px #000,
@@ -256,7 +262,10 @@ padding-left: 5px;
 
 .tech-news > .card {
   padding: 40px;
-  background-color: rgba(255, 255, 255, 0.74);
+  background-color: rgba(0, 0, 0, 0.25);
+  width: 500px;
+
+
 }
 
 .tech-news a {
@@ -269,10 +278,58 @@ padding-left: 5px;
 .Notification {
   margin-top: 50px;
   margin-right: 10px;
-  color: rgba(255, 255, 255, 0.74);
-  
+  background-color: rgba(0, 0, 0, 0.74);
+
 }
 
 .app-nav {
   padding-right: 40px;
+}
+
+.app-card-container {
+  color: white;
+  text-align: left;
+
+}
+
+.app-card-container > .card {
+  padding: 30px;
+}
+
+.profileimg {
+  border: 2px solid grey;
+}
+
+.app-card-container a {
+  color: grey;
+}
+.contact-info {
+text-align: center;
+margin-top: 15px;
+
+}
+
+.home {
+  font-size: 4em;
+}
+
+.about-button:hover {
+  background-color: rgba(0, 0, 0, .25);
+  color: white;
+  border: 1px solid rgba(0, 0, 0, .25);
+}
+
+.about-text {
+  padding-top: 28px;
+  padding-right: 28px;
+  padding-left: 28px;
+  text-align: center;
+}
+
+.contact-card {
+background-color: rgba(0, 0, 0, .25);
+}
+
+.about-card {
+  background-color: rgba(0, 0, 0, .25);
 }

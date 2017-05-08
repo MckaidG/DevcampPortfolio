@@ -3,7 +3,16 @@
 @import "gritter";
 
 body {
-  min-height: 75rem; /* Can be removed; just added for demo purposes */
+  font-family: "tahoma";
+  min-height: 75rem;
+  background: #f2f2f2; /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover,   #d9d9d9 0%, #f2f2f2 100%); /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #d9d9d9), color-stop(100%,#f2f2f2)); /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover,   #d9d9d9 0%,#f2f2f2 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover,   #d9d9d9 0%,#f2f2f2 100%); /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover,   #d9d9d9 0%,#f2f2f2 100%); /* IE10+ */
+  background: radial-gradient(ellipse at center,   #d9d9d9 0%,#f2f2f2 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=' #d9d9d9', endColorstr='#f2f2f2',GradientType=1 ); /* IE6-9 fallback on horizontal gradient *//* Can be removed; just added for demo purposes */
 }
 
 .navbar {
@@ -25,8 +34,9 @@ body {
   }
 
 .jumbotron-heading {
-  font-weight: 300;
+  font-weight: 700;
   color: #5F9EA0;
+  font-size: 3em;
 
 }
 
@@ -44,7 +54,7 @@ body {
 
 .card {
   float: left;
-  width: 33.333%;
+  width: 100%;
   padding: .75rem;
   margin-bottom: 2rem;
   border: 0;
@@ -86,4 +96,52 @@ footer p {
 .button-link {
   color: #5F9EA0;
   background-color: #e6e6e6;
+}
+
+.portfolio-links {
+  color: #5F9EA0;
+}
+
+.portfolio-links:hover {
+  background-color: grey;
+  color: white;
+}
+
+.portfolio-link {
+  color: #5F9EA0;
+
+}
+
+
+/* Nav links */
+.nav-link {
+  position: relative;
+  padding: 1rem;
+  font-weight: 700;
+  color: #cdddeb;
+  font-size: 1.1em;
+
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: #fff;
+  background-color: transparent;
+}
+
+/* Active state gets a caret at the bottom */
+.nav-link.active {
+  color: #fff;
+}
+.nav-link.active:after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  margin-left: -.3rem;
+  vertical-align: middle;
+  content: "";
+  border-right: .3rem solid transparent;
+  border-bottom: .3rem solid;
+  border-left: .3rem solid transparent;
 }
