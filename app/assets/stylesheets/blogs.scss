@@ -6,6 +6,7 @@
  * Globals
  */
 
+
 @media (min-width: 48em) {
   html {
     font-size: 18px;
@@ -14,8 +15,14 @@
 }
 
 body {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  color: #555;
+  background: #f2f2f2; /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover,   #d9d9d9 0%, #f2f2f2 100%); /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #d9d9d9), color-stop(100%,#f2f2f2)); /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover,   #d9d9d9 0%,#f2f2f2 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover,   #d9d9d9 0%,#f2f2f2 100%); /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover,   #d9d9d9 0%,#f2f2f2 100%); /* IE10+ */
+  background: radial-gradient(ellipse at center,   #d9d9d9 0%,#f2f2f2 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=' #d9d9d9', endColorstr='#f2f2f2',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
 h1, .h1,
@@ -172,8 +179,9 @@ margin-top: 20px;
   padding: 2.5rem 0;
   color: #999;
   text-align: center;
-  background-color: #f9f9f9;
-  border-top: .05rem solid #e5e5e5;
+  background-color: rgba(255, 255, 255, 0.35);
+  bottom: 0;
+
 }
 .blog-footer p:last-child {
   margin-bottom: 0;
@@ -186,25 +194,44 @@ margin-top: 20px;
 
 
 .social-links li {
-font-size: 2.5em;
+font-size: 3em;
+color: #5F9EA0;
+
 }
 
-.blog_title  {
+.blog_post_title  {
   color: #5F9EA0;
+  text-decoration: none;
+  background-color: rgba( 0, 0, 0, 0.10) ;
+  border: 1px solid rgba( 0, 0, 0, 0.10);
+  font-size: 1em;
+  border-radius: 20px;
+  width: 500px;
 
+
+}
+
+.blog_post_title:hover {
+  color: #5F9EA0;
+  background-color:  rgba( 0, 0, 0, 0.08);
+  border: 1px solid  white;
+  font-size: .98em;
 }
 
 .comment-attribution {
   font-size: .8em;
   font-style: italic;
 }
-.scoial_icons {
+.social_icons {
   color: #5F9EA0;
 }
 
 .blog-title {
   color: #5F9EA0;
+  text-decoration: none;
+
 }
+
 
 .Back_to_top {
   color: #5F9EA0;
@@ -229,4 +256,135 @@ margin-bottom: 30px;
 
 .blog-sidebar-source {
   margin-top: 20px;
+}
+
+.social-links .fa {
+  color: #5F9EA0;
+}
+
+.social-links .fa:hover {
+  color: grey;
+  font-size: 1.5em;
+}
+.topic-links {
+  color: white;
+  background-color: #5F9EA0;
+  border: 1px solid black;
+
+}
+
+.topic-links:hover {
+  color: white;
+  background-color: grey;
+  border: 1px solid grey;
+}
+
+.navbar-brand {
+  font-family: "Helvetica";
+  font-size: 1.75em;
+  font-color: #5F9EA0;
+}
+
+.admin-nav {
+  background-color: #5F9EA0;
+  border: 1px solid black;
+  text-align: center;
+  width: 250px;
+  margin-right: 45px;
+}
+
+.admin-nav:hover {
+  color: white;
+  background-color: grey;
+  border: 1px solid rgba(0, 0, 0, .25);
+}
+.topic-buttons {
+  background-color: #5F9EA0;
+  color: white;
+  margin-top: 25px;
+  text-align: center;
+  border: 1px solid black;
+
+
+}
+
+.topic-buttons:hover {
+  background-color: grey;
+  border: 1px solid grey;
+  color: white;
+}
+.blog-home {
+  background-color: grey;
+  color: white;
+  margin-top: 25px;
+  text-align: center;
+  margin-top: 600px;
+  border: 2px solid black;
+}
+
+.topic-title {
+  text-align: center;
+  text-weight: bold;
+  color: #5F9EA0;
+  font-family: "Helvetica";
+}
+
+.icons {
+  text-align: center;
+}
+
+.sidebar-title {
+  text-align: center;
+  color: grey;
+}
+
+.cg-blog {
+  color: grey;
+}
+
+.blog-body {
+  color: black;
+  text-align: center;
+}
+
+.blogcrumb .fa:hover {
+  color: grey;
+}
+
+.blog-show {
+  color: #5F9EA0;
+}
+
+.published-time {
+  text-align: center;
+
+}
+
+.blog-fa {
+  font-size: 125%;
+}
+
+.blog-fa:hover  {
+  color: grey;
+  font-size: 115%;
+
+}
+
+
+.comment-title {
+margin-left: 300px;
+}
+
+.blog-show-title {
+  text-align: center;
+  color: #5F9EA0;
+  font-size: 1em;
+}
+
+.topic-title {
+  color: #5F9EA0;
+}
+
+.blog-title-button {
+  text-align: center;
 }

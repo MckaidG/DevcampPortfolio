@@ -1,13 +1,13 @@
 <div class="blog-post">
-  <h2 class="blog-post-title"><%= link_to blog.title.upcase,  blog, class: "blog_title" %></h2>
-  <p class="blog-post-meta">Published <%=  distance_of_time_in_words(blog.created_at, Time.now) %> ago</p>
+  <div class="blog-title-button">
+  <h2 class="blog-post-title"><%= link_to blog.title.upcase,  blog, class: "btn btn-xl btn-info blog_post_title" %></h2>
+</div>
+  <hr>
+  <p class="blog-post-meta published-time">Published <%=  distance_of_time_in_words(blog.created_at, Time.now) %> ago</p>
 
   <%= render partial: 'blogs/admin_actions', locals: { blog: blog } %>
- 	  	 
-  <p>
+
+  <p class= "blog-body">
   	<%= blog.body %>
-  </p>	
+  </p>
 </div>
-
-
-
