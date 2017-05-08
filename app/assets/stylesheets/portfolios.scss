@@ -3,6 +3,7 @@
 @import "gritter";
 
 body {
+  font-family: "tahoma";
   min-height: 75rem;
   background: #f2f2f2; /* Old browsers */
   background: -moz-radial-gradient(center, ellipse cover,   #d9d9d9 0%, #f2f2f2 100%); /* FF3.6+ */
@@ -33,8 +34,9 @@ body {
   }
 
 .jumbotron-heading {
-  font-weight: 300;
+  font-weight: 700;
   color: #5F9EA0;
+  font-size: 3em;
 
 }
 
@@ -108,4 +110,38 @@ footer p {
 .portfolio-link {
   color: #5F9EA0;
 
+}
+
+
+/* Nav links */
+.nav-link {
+  position: relative;
+  padding: 1rem;
+  font-weight: 700;
+  color: #cdddeb;
+  font-size: 1.1em;
+
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: #fff;
+  background-color: transparent;
+}
+
+/* Active state gets a caret at the bottom */
+.nav-link.active {
+  color: #fff;
+}
+.nav-link.active:after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  margin-left: -.3rem;
+  vertical-align: middle;
+  content: "";
+  border-right: .3rem solid transparent;
+  border-bottom: .3rem solid;
+  border-left: .3rem solid transparent;
 }

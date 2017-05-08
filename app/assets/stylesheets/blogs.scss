@@ -15,13 +15,14 @@
 }
 
 body {
-  background: #f2f2f2; /* Old browsers */
-  background: -moz-radial-gradient(center, ellipse cover,   #d9d9d9 0%, #f2f2f2 100%); /* FF3.6+ */
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #d9d9d9), color-stop(100%,#f2f2f2)); /* Chrome,Safari4+ */
-  background: -webkit-radial-gradient(center, ellipse cover,   #d9d9d9 0%,#f2f2f2 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-radial-gradient(center, ellipse cover,   #d9d9d9 0%,#f2f2f2 100%); /* Opera 12+ */
-  background: -ms-radial-gradient(center, ellipse cover,   #d9d9d9 0%,#f2f2f2 100%); /* IE10+ */
-  background: radial-gradient(ellipse at center,   #d9d9d9 0%,#f2f2f2 100%); /* W3C */
+  font-family: "tahoma";
+  background: #cccccc; /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover,   #cccccc 0%,  #f2f2f2 100%); /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #cccccc), color-stop(100%, #f2f2f2)); /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover,   #cccccc 0%, #f2f2f2 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover,   #cccccc 0%, #f2f2f2 100%); /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover,   #cccccc 0%, #f2f2f2 100%); /* IE10+ */
+  background: radial-gradient(ellipse at center,   #cccccc 0%, #f2f2f2 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=' #d9d9d9', endColorstr='#f2f2f2',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
@@ -31,7 +32,8 @@ h3, .h3,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  font-family: "tahoma";
   font-weight: normal;
   color: #333;
 }
@@ -59,9 +61,10 @@ h6, .h6 {
 
 /* Nav links */
 .nav-link {
+
   position: relative;
   padding: 1rem;
-  font-weight: 500;
+  font-weight: 700;
   color: #cdddeb;
 }
 .nav-link:hover,
@@ -101,6 +104,7 @@ h6, .h6 {
 
 }
 .blog-title {
+
   margin-bottom: 0;
   font-size: 2rem;
   font-weight: normal;
@@ -387,4 +391,9 @@ margin-left: 300px;
 
 .blog-title-button {
   text-align: center;
+}
+
+.blog-show-title {
+  font-size: 2.2em;
+  font-weight: 800;
 }
