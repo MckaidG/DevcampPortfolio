@@ -145,3 +145,26 @@ footer p {
   border-bottom: .3rem solid;
   border-left: .3rem solid transparent;
 }
+
+
+
+.portfolio-new {
+  margin-bottom: 15px;
+  background-color: #5F9EA0;
+  color: white;
+  margin-top: 25px;
+  border: 1px solid #5F9EA0;
+  text-align: center;
+
+
+}
+
+.portfolio-new:hover {
+  background-color: grey;
+  border: 1px solid grey;
+  color: white;
+}
+
+.portfolio-div {
+  text-align: center;
+}
