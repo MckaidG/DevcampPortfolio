@@ -25,19 +25,9 @@
           <div class="">
            <br/>
             <%= link_to "Edit Item", edit_portfolio_path(@portfolio_item), class: 'btn btn-sm btn-warning' %>
+            <%= link_to "Delete", portfolio_url, method: :delete, data: { confirm: "You Sure?" }, class: 'btn btn-sm btn-warning' %>
           </div>
         <% end %>
     </div>
   </div>
 </div>
-
-
-
-
-
-
-
-
-
-
-

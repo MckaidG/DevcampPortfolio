@@ -4,9 +4,6 @@
   <p class="lead text-muted"></p>
   <hr>
   <p>
-    <div class= "portfolio-div">
-      <%= link_to "New", new_portfolio_path, class: "btn btn-info portfolio-new" if logged_in?(:site_admin) %>
-    </div>
     <%= link_to 'Home', root_path, class: 'btn btn-secondary button-link' %>
     <%= link_to 'My Blogs', blogs_path, class: 'btn btn-secondary button-link' %>
   </p>
