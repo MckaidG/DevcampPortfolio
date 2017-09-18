@@ -1,9 +1,9 @@
-class BlogsController < ApplicationController
+class BlogsController < ApplicationController # => NameError: uninitialized constant ApplicationController
   before_action :set_blog, only: [:show, :edit, :update, :destroy, :toggle_status]
   before_action :set_sidebar_topics, except: [:update, :create, :destroy, :toggle_status]
   layout "blog"
   access all: [:show, :index], user: {except: [:destroy, :new, :create, :update, :edit, :toggle_status]}, site_admin: :all
-  
+
   # GET /blogs
   # GET /blogs.json
   def index
@@ -21,9 +21,9 @@ class BlogsController < ApplicationController
     if logged_in?(:site_admin) || @blog.Published?
     @blog = Blog.includes(:comments).friendly.find(params[:id])
     @comment = Comment.new
-    @page_title = @blog.title 
+    @page_title = @blog.title
     @seo_keywords = @blog.body
-  else 
+  else
     redirect_to blogs_path, notice: "Not authorized to view this page"
   end
 
@@ -63,8 +63,8 @@ class BlogsController < ApplicationController
       end
     end
   end
-        
-        
+
+
 
   # DELETE /blogs/1
   # DELETE /blogs/1.json
@@ -99,3 +99,4 @@ class BlogsController < ApplicationController
     @side_bar_topics = Topic.with_blogs
   end
 end
+
